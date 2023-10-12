@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- What's in the <head> element is a "meta" area not for display. -
+            It holds important information about the website's contents.
+            The text inside the <title> element does show in the top tab of a web browser. 
+             The <head> is where we will include info about styling the site, too. -->
+        <title>Starter HTML</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Here is a place where we can add a little styling code called CSS to this page. 
+            I used it to apply a background color to the body element.
+        -->
+        <style>
+            body {
+                background: PapayaWhip;
+                text-align: center;
+            }
+            nav {
+                border: 1px;
+                background-color: Tan;
+                color: black;
+                padding: 6px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 30px;
+            }
+            p {
+                font-size: 22px;
+            }</style>
+    </head>
+    <body>
+        <h1>Gallery</h1>
+        <br />
+        <h2>Navigator</h2>
+        <nav>
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="resume.html"
+                >Resume</a>
+        </nav>
+        <br>
+        <p>Welcome to my gallery!</p>
+        <br />
+        <p>For my placeholder images I'd like to introduce my <strong>wonderful</strong> photoshop
+            creations</p>
+        <br />
+        <figure>
+            <img src="images/Slug-with-a-saddle.jpg" Width="350" Height="350" />
+            <figcaption>Just a snail with a saddle on a mushroom.</figcaption>
+        </figure>
+        <br />
+        <figure>
+            <img src="images/The-Trash-Meister.jpg" Width="640" Height="360" />
+            <figcaption>The king of trash</figcaption>
+        </figure>
+        <br />
+        <figure>
+            <img src="images/1954%20Godzilla%20goes%20on%20vacation%20(1)-1.jpg" Width="640"
+                Height="360" />
+            <figcaption>1954 Godzilla going on vacation</figcaption>
+        </figure>
+    </body>
+</html>
