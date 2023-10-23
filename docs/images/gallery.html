@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- What's in the <head> element is a "meta" area not for display. -
+            It holds important information about the website's contents.
+            The text inside the <title> element does show in the top tab of a web browser. 
+             The <head> is where we will include info about styling the site, too. -->
+        <title>Starter HTML</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Here is a place where we can add a little styling code called CSS to this page. 
+            I used it to apply a background color to the body element.
+        -->
+        <style>
+            body {
+                background: PapayaWhip;
+                text-align: center;
+            }
+            nav {
+                border: 1px;
+                background-color: Tan;
+                color: black;
+                padding: 6px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 30px;
+            }
+            p {
+                font-size: 22px;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                 border: 4px solid PapayaWhip;
+                background-color: DarkSlateBlue;
+            }</style>
+    </head>
+    <body>
+        <h1>Gallery</h1>
+        <br />
+        <nav>
+            <h2>Navigator</h2>
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="resume.html"
+                >Resume</a> | <a href="The%20Process.html">Time Line</a> | <a href="Leaf%20By%20Niggle.html">Leaf By Niggle</a> 
+        </nav>
+        <br>
+        <p>Welcome to my gallery!</p>
+        <br />
+        <p>For my placeholder images I'd like to introduce my <strong>wonderful</strong> photoshop
+            creations</p>
+        <br />
+        <p>The link to my <strong>Leaf By Niggle</strong> game is located at in the navigator</p>
+        <br />
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="images/Slug-with-a-saddle.jpg" alt="Snail" Height="290"
+                        style="width:100%" />
+                    <figcaption>Just a snail with a saddle on a mushroom.</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="images/The-Trash-Meister.jpg" alt="Raccoon" style="width:100%"
+                        Height="290" />
+                    <figcaption>The king of trash</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="images/1954%20Godzilla%20goes%20on%20vacation%20(1)-1.jpg"
+                        alt="godzilla" style="width:100%" Height="290" />
+                    <figcaption>1954 Godzilla going on vacation</figcaption>
+                </figure>
+            </div>
+        </div>
+        <br />
+    </body>
+</html>
