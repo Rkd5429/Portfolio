@@ -30,15 +30,33 @@
             }
             p {
                 font-size: 22px;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                
             }</style>
     </head>
     <body>
         <h1>Gallery</h1>
         <br />
-        
         <nav>
-            <h2>Navigator</h2> <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="resume.html"
-                >Resume</a> | <a href="Leaf%20By%20Niggle.html">Leaf By Niggle</a>
+            <h2>Navigator</h2>
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="resume.html"
+                >Resume</a> | <a href="The%20Process.html">Time Line</a> | <a href="Leaf%20By%20Niggle.html">Leaf By Niggle</a> 
         </nav>
         <br>
         <p>Welcome to my gallery!</p>
@@ -48,21 +66,29 @@
         <br />
         <p>The link to my <strong>Leaf By Niggle</strong> game is located at in the navigator</p>
         <br />
-        <figure>
-            <img src="images/Slug-with-a-saddle.jpg" Width="350" Height="350" />
-            <figcaption>Just a snail with a saddle on a mushroom.</figcaption>
-        </figure>
-        <br />
-        <figure>
-            <img src="images/The-Trash-Meister.jpg" Width="640" Height="360" />
-            <figcaption>The king of trash</figcaption>
-        </figure>
-        <br />
-        <figure>
-            <img src="images/1954%20Godzilla%20goes%20on%20vacation%20(1)-1.jpg" Width="640"
-                Height="360" />
-            <figcaption>1954 Godzilla going on vacation</figcaption>
-        </figure>
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="images/Slug-with-a-saddle.jpg" alt="Snail" Height="290"
+                        style="width:100%" />
+                    <figcaption>Just a snail with a saddle on a mushroom.</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="images/The-Trash-Meister.jpg" alt="Raccoon" style="width:100%"
+                        Height="290" />
+                    <figcaption>The king of trash</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="images/1954%20Godzilla%20goes%20on%20vacation%20(1)-1.jpg"
+                        alt="godzilla" style="width:100%" Height="290" />
+                    <figcaption>1954 Godzilla going on vacation</figcaption>
+                </figure>
+            </div>
+        </div>
         <br />
     </body>
 </html>
