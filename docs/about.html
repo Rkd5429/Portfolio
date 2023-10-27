@@ -30,27 +30,53 @@
             }
             p {
                 font-size: 22px;
+            }
+            ul {
+                text-align: center;
+                list-style-position: inside;
+            }
+            .column {
+                float: left;
+            
+                background-color: SaddleBrown;
+                padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            .FirstDiv {
+                border: 4px solid PapayaWhip;
+                background-color: DarkSlateBlue;
+                text-align: center;
             }</style>
     </head>
     <body>
         <h1>About Me</h1>
         <br />
-        
         <nav>
-            <h2>Navigator</h2> <a href="index.html">Home</a> | <a href="gallery.html">Gallery</a> | <a
-                href="resume.html">Resume</a> | <a href="The%20Process.html">Time Line</a>
+            <h2>Navigator</h2>
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html"
+                >Gallery</a> | <a href="resume.html">Resume</a> | <a href="The%20Process.html"
+                >Reflective Essay</a>
         </nav>
         <br>
         <p>Welcome to my about me page</p>
-        <br>
-        <p>Im currently attending Penn State Behrend. Here's the link for their <a
-                href="https://behrend.psu.edu/penn-state-behrend"> home page</a>.</p>
-        <p>Im in my second year here at Behrend and looking to transfer either to University Park or
-            another university after this year</p>
-        <p>As for my major, I'm technically undecided. I would love however to start a major in <a
-                href="https://arts.psu.edu/academics/stuckeman-school/"> Architecture</a>. Which is
-            why I want to transfer so badly.</p>
-        <br>
+        <div class="FirstDiv">
+            <br />
+            <p>Im currently attending Penn State Behrend. Here's the link for their <a
+                    href="https://behrend.psu.edu/penn-state-behrend"> home page</a>.</p>
+            <p>Im in my second year here at Behrend and looking to transfer either to University
+                Park or another university after this year</p>
+            <p>As for my major, I'm technically undecided. I would love however to start a major in
+                    <a href="https://arts.psu.edu/academics/stuckeman-school/"> Architecture</a>.
+                Which is the reason for why I want to transfer so badly.</p>
+            <br />
+        </div>
         <p>Besides school I have an interest in art, hiking, video games, and a few other
             things.</p>
         <p>To keep the masses entertained, I'll now show a picture of my cat</p>
@@ -59,14 +85,62 @@
             <figcaption>This is a really zoomed in picture of my cat Poppy</figcaption>
         </figure>
         <br>
-        <h3>Some of my favorite songs from the last three years</h3>
-        <p>I'll add some songs eventually but for now I'll just add a list</p>
-        <ul>
-            <li><strong>Riptide</strong> by Fuller</li>
-            <li><strong>Nothing Critical</strong> by Cloudeater</li>
-            <li><strong>Game</strong> by Harrison Fjord</li>
-            <li><strong>Follow</strong> by Fangclub</li>
-            <li><strong>Rest Of The Best</strong> by Micky James, DREAMERS</li>
-        </ul>
+        <h2>Some of my favorite songs</h2>
+        <br />
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <a
+                        href="https://open.spotify.com/track/18rCwQGSY80PBnHay3SjcZ?si=10066ff1c8b84a13">
+                        <img src="images/Riptide.jpg" alt="Riptide" height="205" width="205" />
+                    </a>
+                    <figcaption><strong>Riptide</strong> by Fuller</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <a
+                        href="https://open.spotify.com/track/1IMnkjyN1qh5QrFyqk2iPj?si=114a8fb92e6d4fb6">
+                        <img src="images/Cloudeater.jpg" alt="Cloudeater" height="205" width="205"
+                         />
+                    </a>
+                    <figcaption><strong>Nothing Critical</strong> by Cloudeater</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <a
+                        href="https://open.spotify.com/track/2iMx8nJYSZm9xWP1W7lo6g?si=4166c2d865a84f45">
+                        <img src="images/Game.jpg" alt="Game" height="205" width="205" />
+                    </a>
+                    <figcaption><strong>Game</strong> by Harrison Fjord</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <a
+                        href="https://open.spotify.com/track/4osnZvjbd0nDYYLotiP4ps?si=f0e257c05cc74b93">
+                        <img src="images/Follow.jpg" alt="Follow" height="205" width="205" />
+                    </a>
+                    <figcaption><strong>Follow</strong> by Fangclub</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <a
+                        href="https://open.spotify.com/track/0AdQh1ORK3la7dtYVWPpz4?si=a634c9c4ea8b460f">
+                        <img src="images/RestOfTheBest.jpg" alt="Rest of the best" height="205"
+                            width="205" />
+                    </a>
+                    <figcaption><strong>Rest Of The Best</strong> by Micky James</figcaption>
+                </figure>
+            </div>
+        </div>
+        <br />
+        <nav style="background-color: SaddleBrown; padding: 40px;">
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html"
+                >Gallery</a> | <a href="resume.html">Resume</a> | <a href="The%20Process.html"
+                >Reflective Essay</a>
+        </nav>
     </body>
 </html>
