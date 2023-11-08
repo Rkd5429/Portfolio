@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Corpus Analysis</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                background: PapayaWhip;
+                text-align: center;
+            }
+            nav {
+                border: 1px;
+                background-color: Tan;
+                color: black;
+                padding: 6px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 30px;
+            }
+            p {
+            
+                font-size: 22px;
+            }
+            
+            
+            * {
+                box-sizing: border-box;
+            }
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+                height: 40%;
+            
+            }
+            
+            .row {
+                content: "";
+                display: table;
+                clear: both;
+                Width: 100%;
+            
+            }
+         .SecondDiv {
+                border: 4px solid PapayaWhip;
+                background-color: DarkSeaGreen;
+                text-align: center;
+        </style>
+    </head>
+    <body>
+        <h1>Corpus Analysis Project</h1>
+        <br />
+        <nav>
+            <h2>Navigator</h2>
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html"
+                >Gallery</a> | <a href="resume.html">Resume</a> | <a href="The%20Process.html"
+                >Reflective Essay</a> | <a href="Corpus%20Analysis.html">Corpus Analysis</a>
+        </nav>
+        <br />
+        <div class="SecondDiv">
+            <p>For this project, I’ve decided to work with two authors who have mainly done horror
+                element stories.</p>
+            <p>I’ve used two short stories by Edgar Allan Poe (The Tell-Tale Heart and The Cask of
+                Amontillado) and one novel by Stephen King (The Shining).</p>
+            <p>What I'm hoping to gather from both of these authors when I compare them is the
+                differences in writing, the way characters refer to each other, and the</p>
+            <p>way the “horror” aspect happens within the text.</p>
+            <br />
+            <p>On the left side, I have The Shining.</p>
+            <p>On the right side, I have The Tell Tale Heart and The Cask of Amontillado</p>
+        </div>
+        <br />
+        <div class="row">
+            <div class="column" style="background-color:Tan; Border: solid;">
+                <h2>The Shining</h2>
+                <p style="text-align: left; text-indent: 50px;">The Shining was filled to the brim
+                    with stop words such as “a,” “the,” “is,” “are”. Those very same words were
+                    placed as the most occuring words within the text which to me is problematic.
+                    The Word "a" for example had a staggering count of roughly 3800 times. Without
+                    even writting down the amount for each of those stop words we cam already assume
+                    that the most written words were in fact stop words. So I decided to purge many
+                    of those words until more interesting words could be found. </p>
+                <br />
+                <p>Now that the annoying words have been purged, I can finally see the more
+                    important words appear with the now highest word count.</p>
+                <br />
+                <h2>Word Count</h2>
+                <ul style="list-style-position: inside;text-align: center; ">
+                    <li style="font-size: 22px;">Danny = 917</li>
+                    <li style="font-size: 22px;">Jack = 750</li>
+                    <li style="font-size: 22px;">Been = 678</li>
+                    <li style="font-size: 22px;">There = 655</li>
+                    <li style="font-size: 22px;">Like = 648</li>
+                </ul>
+                <br>
+                <figure>
+                    <img src="images/The%20Shining.png" alt="The Shining" />
+                    <figcaption>55 terms</figcaption>
+                </figure>
+                <br />
+                <p>The N-Grams that I found from The Shining were not quite what I expected,
+                    although maybe I should have. For the N-grams, I never actually used any of the
+                    common words when finding them, meaning I just found the most common sentences
+                    in general based off of nothing but the text itself. For now I'll use the
+                    N-Grams that have any interesting details instead of the top five. </p>
+                <br />
+                <h2>N-Grams</h2>
+                <ul style="list-style-position: inside;text-align: center; ">
+                    <li style="font-size: 22px;">been sleepwalking again my dear </li>
+                    <li style="font-size: 22px;">handkerchief from his back pocket </li>
+                    <li style="font-size: 22px;">he looked at his watch </li>
+                    <li style="font-size: 22px;">he wiped his lips with </li>
+                    <li style="font-size: 22px;">here and take your medicine </li>
+                </ul>
+                <br>
+                <figure>
+                    <img src="images/The%20Shining%20N-Gram.png" alt="The Shining" />
+                    <figcaption>Most Interesting N-Grams</figcaption>
+                </figure>
+            </div>
+            <div class="column" style="background-color:Tan; Border: solid;">
+                <h2>The Tell Tale Heart and The Cask of Amontillado</h2>
+                <br />
+                <h2>The Tell Tale Heart</h2>
+                <p style="text-align: left; text-indent: 50px;">Just like the Shining, stop words
+                    dominated the top spot of most occured. SO I did what had to be done to reveal
+                    the better words. Although I did expect the number at which these words were
+                    written to be low since The Tell Tale heart, like a lot of his works, are just
+                    short stories which span a few pages at most, I did not expect however that the
+                    most used word outside of stop words to be only found 15 times.</p>
+                <br />
+                <h2>Word Count</h2>
+                <ul style="list-style-position: inside;text-align: center; ">
+                    <li style="font-size: 22px;">Old = 15</li>
+                    <li style="font-size: 22px;">Night = 13</li>
+                    <li style="font-size: 22px;">Louder = 13</li>
+                    <li style="font-size: 22px;">Heart = 12</li>
+                    <li style="font-size: 22px;">Heard = 11</li>
+                </ul>
+                <br>
+                <figure>
+                    <img src="images/The%20Tell%20Tale%20Heart.png" alt="The Tell Tale Heart" />
+                    <figcaption>55 terms</figcaption>
+                </figure>
+                <br />
+                <p>The N-Grams for The Tell Tale Heart seem to hint at noise being the "horror"
+                    within the short story. It also seems like the main character is an old man.
+                    This of course wasnt decided from just the first N-Gram but mainly because none
+                    of the other words signify the interaction between two individuals which makes
+                    me think that the character is being described from the third person through the
+                    story. But that doesnt quite matter.</p>
+                <br />
+                <h2>N-Grams</h2>
+                <ul style="list-style-position: inside;text-align: center; ">
+                    <li style="font-size: 22px;">the old man</li>
+                    <li style="font-size: 22px;">but the noise</li>
+                    <li style="font-size: 22px;">in the bed</li>
+                    <li style="font-size: 22px;">louder louder louder</li>
+                    <li style="font-size: 22px;">noise steadily increased</li>
+                </ul>
+                <br>
+                <figure>
+                    <img src="images/TCoA%20N-Gram.png" alt="The Tell Tale Heart">
+                    <figcaption>Most Interesting N-Grams</figcaption>
+                </figure>
+                <h2>The Cask of Amontillado</h2>
+                <p style="text-align: left; text-indent: 50px;">The Cask of Amontillado surprised me
+                    with the lack of stop words. It still had a mass amount of them, but
+                    significantly less than The Tell Tale Heart and especially The Shining. The most
+                    used word outside of stop words was found an astounding 24 times. <br />
+                <h2>Word Count</h2>
+                <ul style="list-style-position: inside;text-align: center; ">
+                    <li style="font-size: 22px;">Said = 24</li>
+                    <li style="font-size: 22px;">Amontillado = 21</li>
+                    <li style="font-size: 22px;">Ugh = 15</li>
+                    <li style="font-size: 22px;">Fortunato = 14</li>
+                    <li style="font-size: 22px;">Replied = 8</li>
+                </ul>
+                <br>
+                <figure>
+                    <img src="images/The%20Cask%20of%20Amontilldado.png"
+                        alt="The Cask of Amontillado" />
+                    <figcaption>55 terms</figcaption>
+                </figure>
+                <br />
+                <p>The N-Grams for The Cask of Amontillado have been amusing with first N-Gram being
+                    "ugh ugh ugh ugh". This was used within the text a total of twelve times. Beyond
+                    seeing that without context, I think that it actually fits well into what the
+                    horror element of what this short story could be. The other N-Grams that were
+                    worth mentioning made it seem as if ghosts or some supernatural entity were the
+                    main element. It even further pushes that thought when we see the word
+                    "catacombs".</p>
+                <br />
+                <h2>N-Grams</h2>
+                <ul style="list-style-position: inside;text-align: center; ">
+                    <li style="font-size: 22px;">ugh ugh ugh ugh</li>
+                    <li style="font-size: 22px;">we will go back</li>
+                    <li style="font-size: 22px;">depth of the recess</li>
+                    <li style="font-size: 22px;">let us be gone</li>
+                    <li style="font-size: 22px;">of the catacombs and</li>
+                </ul>
+                <br>
+                <figure>
+                    <img src="images/TTTH%20N-Gram.png" alt="The Cask of Amontillado">
+                    <figcaption>Most Interesting N-Grams</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="SecondDiv">
+            <p>The screen captures show the differences between the two authors. From their use of
+                words and feel of the sentences. Of course, there are massive differences between a
+                book and two short stories but I feel like it goes even beyond that to a point. I've
+                never read any of the text that I'm using and I only plan to do so when it would
+                benefit the asignment in doing so, so I could be wrong. Edgar Allan Poe seems to
+                write his stories in a poem like way, while Stephen King simply writes his lines
+                like normal. Edgar Allan Poe embodies one aspect of the horror and Stephen King has
+                larger variety of them.</p>
+        </div>
+        <br />
+        <nav style="background-color: SaddleBrown; padding: 40px;">
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html"
+                >Gallery</a> | <a href="resume.html">Resume</a> | <a href="The%20Process.html"
+                >Reflective Essay</a>
+        </nav>
+    </body>
+</html>
