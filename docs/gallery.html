@@ -35,25 +35,41 @@
             * {
                 box-sizing: border-box;
             }
+            .row {width: 90%; 
+            margin:auto; /* ebb: margin:auto  effectively centers the containers' contents--puts the same width margin on left and right. */
+            /* ebb: Try setting this up as a flex container to help display your images proportionally
+            Remove all the style attributes on the <img> elements below, and control the images with flex
+            and CSS properties up here. 
+            */
+            display:flex; 
+            /* flex starts here. */
+            }
+            .column { /* You don't need anything here. With display:flex; set on the parent element (div.row), 
+            each column will be the same width and laid out side by side. 
             
-            .column {
-                float: left;
+         
+                /*float: left;
                 width: 33.33%;
-                padding: 5px;
+                padding: 5px;*/
             }
             
             /* Clearfix (clear floats) */
-            .row::after {
-                content: "";
+            .row::after { 
+              /* ebb:  properties not necessary with a flex container
+              content: "";
                 clear: both;
-                display: table;
-            
+                display: table;*/
+
             }
+         
             img {
                 border-radius: 25px;
                 border: 4px solid tan;
-            
-            
+                /* Down here, set a width of 100% and a max-width in pixels, 
+                images will resize proportionally on a change of browser width 
+                (good for mobile and desktop) */
+                width:100%;
+                max-width:800px;
             
             }</style>
     </head>
@@ -64,7 +80,7 @@
             <h2>Navigator</h2>
             <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html"
                 >Gallery</a> | <a href="resume.html">Resume</a> | <a href="The%20Process.html"
-                >Reflective Essay</a> | <a href="Corpus%20Analysis.html">Corpus Analysis</a>
+                    >Reflective Essay</a> | <a href="Corpus%20Analysis.html">Corpus Analysis</a>
         </nav>
         <br>
         <p>Welcome to my gallery!</p>
@@ -75,22 +91,21 @@
         <div class="row">
             <div class="column">
                 <figure>
-                    <img src="images/Slug-with-a-saddle.jpg" alt="Snail" Height="290"
-                        style="width:100%" />
+                    <img src="images/Slug-with-a-saddle.jpg" alt="Snail"  />
                     <figcaption>Just a snail with a saddle on a mushroom.</figcaption>
                 </figure>
             </div>
             <div class="column">
                 <figure>
-                    <img src="images/The-Trash-Meister.jpg" alt="Raccoon" style="width:100%"
-                        Height="290" />
+                    <img src="images/The-Trash-Meister.jpg" alt="Raccoon" 
+                    />
                     <figcaption>The king of trash</figcaption>
                 </figure>
             </div>
             <div class="column">
                 <figure>
                     <img src="images/1954%20Godzilla%20goes%20on%20vacation%20(1)-1.jpg"
-                        alt="godzilla" style="width:100%" Height="290" />
+                        alt="godzilla"  />
                     <figcaption>1954 Godzilla going on vacation</figcaption>
                 </figure>
             </div>
@@ -99,35 +114,33 @@
         <div class="row">
             <div class="column">
                 <figure>
-                    <img src="images/Art_Class_Charcoal.jpg" alt="Charcoal" style="width:100%"
-                        Height="450" />
+                    <img src="images/Art_Class_Charcoal.jpg" alt="Charcoal"  />
                     <figcaption>A quick charcoal drawing from my art class</figcaption>
                 </figure>
             </div>
             <div class="column">
                 <figure>
-                    <img src="images/Work_In_Progress.jpg" alt="Work In Progress" style="width:100%"
-                        Height="450" />
+                    <img src="images/Work_In_Progress.jpg" alt="Work In Progress"  />
                     <figcaption>Just a work in progress picture</figcaption>
                 </figure>
             </div>
             <div class="column">
                 <figure>
                     <img src="images/Mountain_side_Village.jpg" alt="Mountain Village"
-                        style="width:100%" Height="450" />
+                    />
                     <figcaption>A picture of a mountain side village</figcaption>
                 </figure>
             </div>
         </div>
         <figure>
-            <img src="images/Still-Life.jpg" alt="Still Life" Style="width:40%" Height="450" />
+            <img src="images/Still-Life.jpg" alt="Still Life"  />
             <figcaption>A still Life I did from my first year at Behrend</figcaption>
         </figure>
         <br>
         <nav style="background-color: SaddleBrown; padding: 40px;">
             <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html"
                 >Gallery</a> | <a href="resume.html">Resume</a> | <a href="The%20Process.html"
-                >Reflective Essay</a>
+                    >Reflective Essay</a>
         </nav>
     </body>
 </html>
